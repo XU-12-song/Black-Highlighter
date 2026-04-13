@@ -280,6 +280,11 @@
 						--social-logo-mask: var(--sandbox-mask);
 						--social-color: var(--sandbox-icon-color);
 					}
+
+					&[href*="bsky"] {
+						--social-logo-mask: var(--bluesky-mask);
+						--social-color: var(--bluesky-icon-color);
+					}
 				}
 			}
 		}
@@ -1361,6 +1366,11 @@
 					&[href*="sandbox"] {
 						--social-logo-mask: var(--sandbox-mask);
 						--social-color: var(--sandbox-icon-color);
+					}
+
+					&[href*="bsky"] {
+						--social-logo-mask: var(--bluesky-mask);
+						--social-color: var(--bluesky-icon-color);
 					}
 				}
 			}
