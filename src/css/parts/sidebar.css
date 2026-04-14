@@ -198,6 +198,11 @@
 					--social-logo-mask: var(--discord-mask);
 					--social-color: var(--discord-icon-color);
 				}
+
+				&[href*="bsky"] {
+					--social-logo-mask: var(--bluesky-mask);
+					--social-color: var(--bluesky-icon-color);
+				}
 			}
 		}
 
