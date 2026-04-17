@@ -1,40 +1,46 @@
-/* ROOT VARS
-   ============================= */
+.root {
+    --background-color: #1a1a2e;
+    --primary-color: #16213e;
+    --accent-color: #0f3460;
+    --text-color: #e0e0e0;
+    --highlight-color: #e94560;
+}
 
-/* Structural elements generally part of standard HTML spec as well as Wikidot's base structural elements */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
 
-/* ===DIRECTORY===
-	0. =CUSTOM MEDIA DEFINITIONS
-	1. =S-CSS-P INTEGRATION
-	2. =HEADER ELEMENTS
-	3. =TYPEFACES
-		3.1 =BASE FONT SIZE & LINE HEIGHT
-		3.2 =HEADER TITLE FONT SIZES
-	4. =VARIABLE FONT SETTINGS
-		4.1 =VARIABLE MONO FONT SETTINGS
-	5. =OPENTYPE FEATURE SETTINGS
-	6. =STANDARD THEME COLORS
-	7. =PRIMARY COLORS
-		8.1. =GENERAL COLORS
-		8.2. =GENERAL TEXT COLORS
-	8. =BACKGROUND & HEADER COLORS
-	9. =MENU COLORS
-		9.1 =MENU BACKGROUND COLORS
-		9.2 =MENU TEXT COLORS
-	10. =SECONDARY & TERTIARY COLORS
-	11. =PRIMARY GRADIENTS
-	12. =STRUCTURAL SPACING ELEMENTS
-		14.1 =HEADER MEASUREMENTS
-		14.2 =TOPBAR MEASUREMENTS
-		14.3 =FINAL HEADER + TOPBAR MEASUREMENTS
-		14.4 =SIDEBAR MEASUREMENTS
+h1, h2, h3, h4, h5, h6 {
+    color: var(--highlight-color);
+}
 
-	===============================
-	======= SPECIFIC COLORS =======
-	===============================
-	13. =BACKGROUND GRADIENT
-		13.1 =GENERAL BACKGROUND
-		13.2 =HEADER GRADIENT
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}		13.2 =HEADER GRADIENT
 		13.3 =TOPBAR GRADIENT
 	14. =LINK COLORS
 	15. =CODE BLOCK COLORS
